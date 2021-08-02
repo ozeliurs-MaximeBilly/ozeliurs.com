@@ -31,11 +31,6 @@ def articles():
 
     article_list.sort(key=lambda x:x[0], reverse=True)
 
-    print(article_list)
-    #sorted([datetime.strptime(dt, "%Y-%m-%d %H:%M:%S") for dt in dateList])
-    
-    #article_list.sort(key=[0].split("<code>")[1].split("</code>")[0])
-
     return render_template("articles.html", articles=article_list)
 
 @app.route("/article/<name>")
