@@ -1,7 +1,18 @@
 <h1>How I made a honeypot to catch Hackers.</h1>
 <code>02/08/2021</code>
 <hr>
-<h4>Come here to learn how to catch hackers, see what malware the execute currently and display this information beatifully using Flask.</h4>
+<h4>Come here to learn how to catch hackers, see what malware they execute currently and display this information beatifully using Flask.</h4>
 <hr>
 <p>As a holiday project I wanted to know why so many ip adresses tried to connect to my personnal server. In the quest of truth I stumbled on Cowrie, a linux program that captures ssh sessions and allows us to analyse the ssh traffic to our machine.</p>
-<p>For installation you can install the app on docker which eases the install process. You can find info <a href="https://github.com/cowrie/docker-cowrie">here</a>. Otherwise you can install it normally on your machine with the help of <a href="https://cowrie.readthedocs.io/en/latest/INSTALL.html">this guide</a>.</p>
+<h5>The installation process</h5>
+<p>For installation you can install the app on docker which eases the install process.<br>Make sure to have your ssh port relocated to another (You can use <a href="https://linuxhandbook.com/change-ssh-port/">This Guide</a>).</p>
+<blockquote>docker run -d -p 22:2222/tcp --name cowrie cowrie/cowrie</blockquote>
+<p>You can find more info <a href="https://github.com/cowrie/docker-cowrie">here</a>.</p> 
+<p>Now that your honeypot is running it will collect logs on each and every ssh session. Let some time to hackers to attack your pc and soon you will be able to analyze the logs.</p>
+<h5>Analyzing the Logs</h5>
+<p>Now comes the fun part. What are the hackers trying to do ...</p>
+<p>First to extract the logs from docker you'll have to execute a command.</p>
+<blockquote>docker exec cowrie /bin/sh -c "cat var/log/cowrie/cowrie.json*" > cowrie.json</blockquote>
+<p>This command executes <code>cat var/log/cowrie/cowrie.json*</code> inside of your docker container and redirects the output to <i>cowrie.json</i> on the current directory.
+</p>
+
