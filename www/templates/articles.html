@@ -1,10 +1,13 @@
 {% extends "site.html" %}
 {% block title %}Ozeliurs' Website - Articles{% endblock %}
 {% block content %}
-    <a href="/article/XXXX" class="text-dark"><div class="card" style="margin: 10px auto">
-        <h1 style="margin-bottom: 0px">Article Example</h1>
-        <code>XX/XX/XXXX</code>
+<!-- [date_f, link, title, date, fline] -->
+{% for article in articles %}
+    <a href="{{article[1]}}" class="text-dark"><div class="card" style="margin: 10px auto">
+        <h1 style="margin-bottom: 0px">{{article[2]}}</h1>
+        <code>{{article[3]}}</code>
         <hr>
-        <p>Mollitia id dolor voluptatem ut et. Et accusantium asperiores tempora minus non dolor odio et. Dolorem tempore facere consequatur iure. In deserunt nostrum consequatur natus sunt nemo. Voluptatem et ducimus esse natus.</p>
+        <p>{{article[4]}}</p>
     </div></a>
+{% endfor %}
 {% endblock %}
