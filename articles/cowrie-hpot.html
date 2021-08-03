@@ -13,6 +13,19 @@
 <p>Now comes the fun part. What are the hackers trying to do ...</p>
 <p>First to extract the logs from docker you'll have to execute a command.</p>
 <blockquote>docker exec cowrie /bin/sh -c "cat var/log/cowrie/cowrie.json*" > cowrie.json</blockquote>
-<p>This command executes <code>cat var/log/cowrie/cowrie.json*</code> inside of your docker container and redirects the output to <i>cowrie.json</i> on the current directory.
-</p>
+<p>This command executes <code>cat var/log/cowrie/cowrie.json*</code> inside of your docker container and redirects the output to <code>cowrie.json</code> on the current directory.</p>
+<img src="" alt="">
+<p>This isn't very readeable... We'll fix this with some python code.</p>
+<blockquote><pre>with open("cowrie.json", "r", encoding="utf8") as f:
+    cowrie_j = f.read()
 
+cowrie_j = "[" + cowrie_j.replace("\n", ",")[:-1] + "]"
+cowrie_j = json.loads(cowrie_j)</pre></blockquote>
+<p>This will open the cowrie.json file and make it json readeable.<br>Now we will extract the ips connecting to us and count them.</p>
+<blockquote><pre>for el in cowrie_json:
+    if el["eventid"] == "cowrie.session.connect":
+        if el["src_ip"] not in ip_dic:
+            ip_dic[el["src_ip"]] = {"count": 1}
+        else:
+            ip_dic[el["src_ip"]]["count"] += 1
+return ip_dic</pre></blockquote>
