@@ -14,4 +14,4 @@ COPY main.py /home/main.py
 
 EXPOSE 80
 
-CMD [“python3”, “/home/main.py”]
+CMD ["flask","run"]
