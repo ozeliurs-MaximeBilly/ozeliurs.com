@@ -6,6 +6,7 @@ RUN apt-get update -y
 RUN apt-get install python3 -y
 RUN apt-get install python3-pip -y
 RUN pip3 install -r requirements.txt
+RUN FLASK_APP=/home/app.py
 
 COPY articles /home/articles
 COPY static /home/static
@@ -14,4 +15,4 @@ COPY main.py /home/main.py
 
 EXPOSE 80
 
-ENTRYPOINT FLASK_APP=/home/app.py flask run
+CMD ["flask","run"]
