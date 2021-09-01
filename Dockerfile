@@ -12,4 +12,6 @@ COPY static /home/static
 COPY templates /home/templates
 COPY main.py /home/main.py
 
+EXPOSE 80
+
 ENTRYPOINT FLASK_APP=/home/main.py flask run --host=0.0.0.0
