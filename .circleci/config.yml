@@ -4,14 +4,19 @@ orbs:
   docker: circleci/docker@1.7.0
 
 jobs:
-  build:
+  example-job:
     docker:
-      # replace with your preferred image
       - image: cimg/base:stable
     steps:
       - docker/build:
+          attach-at: ./ 
+          docker-context: . 
+          dockerfile: Dockerfile 
           image: ozeliurs-com 
+          path: . 
+          step-name: Docker-Build 
+
 workflows:
-  build-workflow:
+  example-workflow:
     jobs:
-      - build
+      - example-job
