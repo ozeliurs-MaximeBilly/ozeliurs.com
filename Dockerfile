@@ -1,5 +1,7 @@
 FROM ubuntu:20.04
 
+COPY requirements.txt requirements.txt
+
 RUN apt-get update -y
 RUN apt-get install python -y
 RUN apt-get install python3-pip -y
