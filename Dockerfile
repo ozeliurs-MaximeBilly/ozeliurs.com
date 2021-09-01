@@ -14,4 +14,4 @@ COPY main.py /home/main.py
 
 EXPOSE 80
 
-ENTRYPOINT FLASK_APP=/home/app.py flask run
+ENTRYPOINT python3 /home/main.py
