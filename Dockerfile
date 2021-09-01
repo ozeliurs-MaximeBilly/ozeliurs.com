@@ -12,6 +12,6 @@ COPY static /home/static
 COPY templates /home/templates
 COPY main.py /home/main.py
 
-EXPOSE 80
+EXPOSE 8080
 
 ENTRYPOINT python3 /home/main.py
