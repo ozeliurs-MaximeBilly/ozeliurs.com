@@ -14,4 +14,4 @@ COPY main.py /home/main.py
 
 EXPOSE 80
 
-CMD ["flask","run"]
+ENTRYPOINT FLASK_APP=/home/app.py flask run
