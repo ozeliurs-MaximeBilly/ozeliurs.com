@@ -3,9 +3,15 @@ version: 2.1
 orbs:
   docker: circleci/docker@1.7.0
 
+jobs:
+  build:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - docker/build:
+          image: ozeliurs-com 
 workflows:
-    build_&_publish:
-      jobs:
-        - docker/publish:
-            image: ozeliurs-com
-
+  build-workflow:
+    jobs:
+      - build
