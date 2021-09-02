@@ -11,6 +11,6 @@ COPY static /static
 COPY templates /templates
 COPY main.py /main.py
 
-EXPOSE 8080
+EXPOSE 8000
 
-CMD ["gunicorn","main:app","--workers=5","-b 0.0.0.0:8080"]
+CMD ["gunicorn","main:app","--workers=5"]
