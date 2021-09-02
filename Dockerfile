@@ -13,4 +13,4 @@ COPY main.py /main.py
 
 EXPOSE 8000
 
-CMD ["gunicorn","main:app","--workers=5","--bind 0.0.0.0:8000"]
+CMD ["gunicorn","main:app","-b 0.0.0.0:8000","--workers=5"]
