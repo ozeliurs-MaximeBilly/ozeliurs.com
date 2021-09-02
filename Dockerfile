@@ -1,16 +1,15 @@
-FROM ubuntu:20.04
+FROM alpine:3.14
 
 COPY requirements.txt requirements.txt
 
-RUN apt-get update -y
-RUN apt-get install python3 -y
-RUN apt-get install python3-pip -y
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+RUN python3 -m ensurepip
 RUN pip3 install -r requirements.txt
 
-COPY articles /home/articles
-COPY static /home/static
-COPY templates /home/templates
-COPY main.py /home/main.py
+COPY articles /articles
+COPY static /static
+COPY templates /templates
+COPY main.py /main.py
 
 EXPOSE 8080
 
