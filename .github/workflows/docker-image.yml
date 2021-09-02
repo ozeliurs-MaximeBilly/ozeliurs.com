@@ -18,5 +18,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
-    - name: Push the Docker image
-      run: echo "Ta mère !"
+    - name: Tell server to update.
+      run: wget https://ozeliurs.com/update
