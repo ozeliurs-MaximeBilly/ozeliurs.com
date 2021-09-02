@@ -14,4 +14,4 @@ COPY main.py /home/main.py
 
 EXPOSE 8080
 
-ENTRYPOINT python3 /home/main.py
+CMD ["gunicorn","main:app"]
