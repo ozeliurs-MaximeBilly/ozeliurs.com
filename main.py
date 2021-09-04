@@ -10,7 +10,7 @@ print(w_dir)
 # Error Pages
 @app.errorhandler(404)
 def not_found(e):
-    err_msg = ["404","4/04","Are you lost ?","You heva reached the end of the internet.","Congrats, you broke it ..."]
+    err_msg = ["404","4/04","Are you lost ?","You have reached the end of the internet.","Congrats, you broke it ..."]
     return render_template("404.html", message=random.choice(err_msg))
 
 # Main Website
