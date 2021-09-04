@@ -6,6 +6,12 @@ app = Flask(__name__, static_url_path='')
 w_dir = Path(__file__).parent
 print(w_dir)
 
+# Error Pages
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
+
+# Main Website
 @app.route("/")
 def index():
     return render_template("index.html")
