@@ -1,0 +1,15 @@
+name: Python Code CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+	  - name: Setup Python
+	  uses: actions/setup-python@v2.2.2
