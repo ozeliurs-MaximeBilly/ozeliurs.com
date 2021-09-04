@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-	  - name: Setup Python
-	  uses: actions/setup-python@v2.2.2
+    - name: Setup Python
+      uses: actions/setup-python@v2.2.2
