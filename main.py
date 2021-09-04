@@ -1,3 +1,4 @@
+"""This app serves the website ozeliurs.com"""
 import random
 import datetime
 from pathlib import Path
