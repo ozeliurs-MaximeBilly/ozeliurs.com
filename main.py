@@ -1,7 +1,8 @@
-from flask import Flask, redirect, url_for, render_template, jsonify
-from pathlib import Path
-import datetime
 import random
+import datetime
+from pathlib import Path
+from flask import Flask, render_template
+
 
 app = Flask(__name__, static_url_path='')
 w_dir = Path(__file__).parent
@@ -9,8 +10,14 @@ print(w_dir)
 
 # Error Pages
 @app.errorhandler(404)
-def not_found(e):
-    err_msg = ["404","4/04","Are you lost ?","You have reached the end of the internet.","Congrats, you broke it ..."]
+def not_found(err):
+    err_msg = [
+        "404",
+        "4/04",
+        "Are you lost ?",
+        "You have reached the end of the internet.",
+        "Congrats, you broke it ..."
+    ]
     return render_template("404.html", message=random.choice(err_msg))
 
 # Main Website
