@@ -10,7 +10,7 @@ print(w_dir)
 
 # Error Pages
 @app.errorhandler(404)
-def not_found(err):
+def not_found():
     err_msg = [
         "404",
         "4/04",
@@ -35,8 +35,8 @@ def articles():
     article_list = []
 
     for art in article_dir.glob("*.html"):
-        with art.open('r', encoding='utf8') as f:
-            text = "<hr>".join(f.read().split("<hr>")[:2])
+        with art.open('r', encoding='utf8') as file:
+            text = "<hr>".join(file.read().split("<hr>")[:2])
             title = text.split("<h1>")[1].split("</h1>")[0]
             date = text.split("<code>")[1].split("</code>")[0]
             date_f = datetime.datetime.strptime(date, "%d/%m/%Y")
