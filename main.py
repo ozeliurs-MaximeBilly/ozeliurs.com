@@ -11,6 +11,7 @@ print(w_dir)
 # Error Pages
 @app.errorhandler(404)
 def not_found():
+    """Handle 404 errors."""
     err_msg = [
         "404",
         "4/04",
@@ -23,14 +24,17 @@ def not_found():
 # Main Website
 @app.route("/")
 def index():
+    """Handle Homepage"""
     return render_template("index.html")
 
 @app.route("/projects/")
 def projects():
+    """Halndle Projects Page"""
     return render_template("projects.html")
 
 @app.route("/articles/")
 def articles():
+    """Handle Articles Page"""
     article_dir = w_dir/"articles"
     article_list = []
 
@@ -50,6 +54,7 @@ def articles():
 
 @app.route("/article/<name>")
 def article(name):
+    """Handle all article pages"""
     article_path = w_dir/"articles"/(name+".html")
     with article_path.open('r', encoding='utf8') as f:
         html = f.read()
