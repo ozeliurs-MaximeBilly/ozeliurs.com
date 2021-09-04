@@ -56,8 +56,8 @@ def articles():
 def article(name):
     """Handle all article pages"""
     article_path = w_dir/"articles"/(name+".html")
-    with article_path.open('r', encoding='utf8') as f:
-        html = f.read()
+    with article_path.open('r', encoding='utf8') as file:
+        html = file.read()
     return render_template("article.html", article=html)
 
 if __name__ == "__main__":
