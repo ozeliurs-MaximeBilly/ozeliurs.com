@@ -33,6 +33,16 @@ def print_cv():
     """Ready to print Version."""
     return render_template("print.html")
 
+@app.route("/fr/")
+def french():
+    """Handle French Homepage"""
+    return render_template("fr.html")
+
+@app.route("/fr/print/")
+def french_print_cv():
+    """Ready to print Version."""
+    return render_template("print_fr.html")
+
 @app.route("/projects/")
 def projects():
     """Halndle Projects Page"""
