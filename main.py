@@ -36,11 +36,11 @@ def print_cv():
 @app.route("/fr/")
 def french():
     """Handle French Homepage"""
-    return render_template("fr.html")
+    return render_template("index_fr.html")
 
 @app.route("/fr/print/")
 def french_print_cv():
-    """Ready to print Version."""
+    """Ready to print French Version."""
     return render_template("print_fr.html")
 
 @app.route("/projects/")
