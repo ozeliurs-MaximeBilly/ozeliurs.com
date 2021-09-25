@@ -28,6 +28,10 @@ def index():
     """Handle Homepage"""
     return render_template("index.html")
 
+@app.route("/print/")
+def print_cv():
+    return render_template("print.html")
+
 @app.route("/projects/")
 def projects():
     """Halndle Projects Page"""
