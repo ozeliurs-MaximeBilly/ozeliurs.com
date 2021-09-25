@@ -30,6 +30,7 @@ def index():
 
 @app.route("/print/")
 def print_cv():
+    """Ready to print Version."""
     return render_template("print.html")
 
 @app.route("/projects/")
