@@ -1,5 +1,6 @@
 <?php
-function start_page($title)
+
+function head($title)
 {
     echo '<!DOCTYPE html>'.PHP_EOL;
     echo '<html lang="en">'.PHP_EOL;
@@ -9,6 +10,10 @@ function start_page($title)
     echo '    <link rel="stylesheet" href="https://unpkg.com/chota@latest">'.PHP_EOL;
     echo '    <!-- https://feathericons.com/ && https://jenil.github.io/chota/ -->'.PHP_EOL;
     echo '</head>'.PHP_EOL;
+}
+
+function start_page()
+{
     echo '<body style="background-color: rgba(26, 159, 96, 00.2)">'.PHP_EOL;
     echo '    <nav class="nav" style="background-color: white">'.PHP_EOL;
     echo '        <div class="nav-left">'.PHP_EOL;
