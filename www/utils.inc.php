@@ -9,7 +9,7 @@ function head($title)
     echo '    <title>'.$title.'</title>'.PHP_EOL;
     echo '    <link rel="stylesheet" href="https://unpkg.com/chota@latest">'.PHP_EOL;
     echo '    <!-- https://feathericons.com/ && https://jenil.github.io/chota/ -->'.PHP_EOL;
-    echo '</head>'.PHP_EOL;
+    echo '</head>';
 }
 
 function start_page()
@@ -27,14 +27,14 @@ function start_page()
     echo '            <a href="https://github.com/ozeliurs-MaximeBilly" class="button outline">Github</a>'.PHP_EOL;
     echo '        </div>'.PHP_EOL;
     echo '    </nav>'.PHP_EOL;
-    echo '    <div class="container">'.PHP_EOL;
+    echo '    <div class="container">';
 }
 
 function end_page()
 {
     echo '    </div>'.PHP_EOL;
     echo '</body>'.PHP_EOL;
-    echo '</html>'.PHP_EOL;
+    echo '</html>';
 }
 
 ?>

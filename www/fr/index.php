@@ -31,7 +31,6 @@
                         <p style="margin: auto 10px">@ozeliurs</p>
                     </a>
                 </div>
-
             </div>
         </div>
 <?php
