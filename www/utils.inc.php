@@ -30,6 +30,19 @@ function start_page()
     echo '    <div class="container">';
 }
 
+function print_page()
+{
+    echo '<body style="background-color: rgba(26, 159, 96, 00.2)">'.PHP_EOL;
+    echo '    <div class="container">';
+}
+
+function title($title)
+{
+    echo '        <div class="card" style="display: flex; margin: 10px auto">'.PHP_EOL;
+    echo '            <h1 style="margin: 10px auto">'.$title.'</h1>'.PHP_EOL;
+    echo '        </div>';
+}
+
 function end_page()
 {
     echo '    </div>'.PHP_EOL;

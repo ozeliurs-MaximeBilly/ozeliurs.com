@@ -2,6 +2,9 @@
     include '../utils.inc.php';
     head("Ozeliurs' Website");
     start_page();
+    if (isset($_GET['t'])) {
+        title($_GET['t']);
+    }
     include_once 'cv_fr.html';
 ?>
         <div class="card" style="margin: 10px auto">
