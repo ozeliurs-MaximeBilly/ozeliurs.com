@@ -19,8 +19,8 @@ function start_page()
     echo '        <div class="nav-left">'.PHP_EOL;
     echo '            <a href="/" class="brand">Ozeliurs\' Website</a>'.PHP_EOL;
     echo '            <div class="tabs">'.PHP_EOL;
-    echo '                <a href="/projects">Projects</a>'.PHP_EOL;
-    echo '                <a href="/articles">Articles</a>'.PHP_EOL;
+    //echo '                <a href="/projects">Projects</a>'.PHP_EOL;
+    //echo '                <a href="/articles">Articles</a>'.PHP_EOL;
     echo '            </div>'.PHP_EOL;
     echo '        </div>'.PHP_EOL;
     echo '        <div class="nav-right">'.PHP_EOL;
