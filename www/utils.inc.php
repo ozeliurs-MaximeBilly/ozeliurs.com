@@ -32,8 +32,8 @@ function start_page()
 
 function print_page()
 {
-    echo '<body>'.PHP_EOL;
-    echo '    <div class="container">';
+    echo '<body style="font-size: 1rem">'.PHP_EOL;
+    echo '    <div>';
 }
 
 function title($title)

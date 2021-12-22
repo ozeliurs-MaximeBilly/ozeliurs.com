@@ -6,5 +6,6 @@
         title($_GET['t']);
     }
     include_once 'cv_fr.php';
+    echo '<script>print()</script>';
     end_page();
 ?>

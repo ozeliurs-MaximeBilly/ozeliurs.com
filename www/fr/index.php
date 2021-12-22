@@ -8,7 +8,7 @@
     include_once 'cv_fr.php';
 ?>
         <div class="card" style="margin: 10px auto">
-            <h2>Contact Me.</h2>
+            <h2>Contactez Moi.</h2>
             <div class="row">
                 <div class="col">
                     <a href="mailto:ozeliurs@gmail.com" class="is-center is-vertical-align button outline">
@@ -34,6 +34,15 @@
                         <p style="margin: auto 10px">@ozeliurs</p>
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="card" style="margin: 10px auto">
+            <h2>Version Papier</h2>
+            <div class="col">
+                <a href="/fr/print.php<?php if (isset($_GET['t'])) {echo '?t='.$_GET['t'];} ?>" class="is-center is-vertical-align button outline">
+                    <img src="/static/icons/printer.svg" alt="twitter_icon">
+                    <p style="margin: auto 10px">Imprimer</p>
+                </a>
             </div>
         </div>
 <?php
