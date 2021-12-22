@@ -43,8 +43,8 @@
             <ul style="margin-bottom: 5px"><li>Travail en tant qu'employé commercial dans une équipe de 15 personnes.</li>
                 <li>Compétences acquises:</li></ul>
             <div class="row">
-                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en équipe.</p></div>
                 <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Accueillir et Renseigner.</p></div>
+                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en équipe.</p></div>
                 <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Gérer les priorités.</p></div>
             </div>
             <h4 style="margin-bottom: 0"><b>CSTB</b>, Sophia Antipolis — Centre Scientifique et Technique du Bâtiment</h4>
