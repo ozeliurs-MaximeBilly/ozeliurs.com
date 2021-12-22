@@ -70,8 +70,9 @@
                 <h4><b>Connaissance des Logiciels</b></h4>
                 <div class="row" style="margin-left: 30px">
                     <div class="col-11 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Office Suite</b></div>
+                    <div class="col-10 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Jetbrains Suite</b></div>
                     <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Adobe Suite</b></div>
-                    <div class="col-7 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Solidworks & Catia V5</b></div>
+                    <div class="col-5 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Solidworks & Catia V5</b></div>
                 </div>
             </div>
         </div>
