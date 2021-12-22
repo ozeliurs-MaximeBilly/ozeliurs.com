@@ -4,7 +4,7 @@
         <code style="margin-left: 5px" class="is-center">Maxime BILLY</code>
         <hr>
         <div style="margin-left: 5px">
-            <samp>Né le 12/03/2000 (21 ans)</samp><br>
+            <samp>Né le 12/03/2000 (<?php echo age("03/12/2000"); ?> ans)</samp><br>
             <samp>Vit à Saint Cézaire 06530</samp>
         </div>
         <hr>
@@ -26,11 +26,10 @@
             <code>Septembre 2020 à Aujourd'hui</code>
             <h4 style="margin-bottom: 0"><b>Ecole Nationale d'Ingénieurs de Saint Etienne</b>, Saint Etienne</h4>
             <code>Septembre 2018 à Fevrier 2020</code>
-            <ul><li>Compétences acquises:</li></ul>
+            <ul style="margin-bottom: 5px"><li>Compétences acquises:</li></ul>
             <div class="row">
-                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en équipe.</p></div>
-                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Accueillir et Renseigner.</p></div>
-                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Gérer les priorités.</p></div>
+                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Mener un Raisonnement Scientifique.</p></div>
+                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Résolution de Problèmes.</p></div>
             </div>
             <h4 style="margin-bottom: 0"><b>Lycée Alexis de Tocqueville</b>, Grasse</h4>
             <code>Septembre 2015 à Juin 2018</code>
@@ -41,7 +40,7 @@
         <div style="margin-left: 30px; margin-bottom: 20px"> <!-- Sous partie experience professionelle -->
             <h4 style="margin-bottom: 0"><b>LEASON</b>, Saint Cézaire — Carrefour Contact</h4>
             <code>Mars 2020 à Juin 2020</code>
-            <ul><li>Travail en tant qu'employé commercial dans une équipe de 15 personnes.</li>
+            <ul style="margin-bottom: 5px"><li>Travail en tant qu'employé commercial dans une équipe de 15 personnes.</li>
                 <li>Compétences acquises:</li></ul>
             <div class="row">
                 <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en équipe.</p></div>
