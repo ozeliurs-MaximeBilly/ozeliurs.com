@@ -32,7 +32,7 @@ function start_page()
 
 function print_page()
 {
-    echo '<body style="background-color: rgba(26, 159, 96, 00.2)">'.PHP_EOL;
+    echo '<body>'.PHP_EOL;
     echo '    <div class="container">';
 }
 
