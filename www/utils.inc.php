@@ -50,4 +50,15 @@ function end_page()
     echo '</html>';
 }
 
+function lang()
+{
+    session_start();
+
+    if (!isset($_SESSION['lang'])) {
+        $_SESSION['lang'] = "fr";
+    }
+
+    require 'lang/'.$_SESSION['lang'].'.php';
+}
+
 ?>
