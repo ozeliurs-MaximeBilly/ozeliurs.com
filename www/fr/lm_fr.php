@@ -31,3 +31,16 @@
     <p style="margin-bottom: 5px">Cordialement</p>
     <h5>Maxime BILLY</h5>
 </section>
+
+Je suis actuellement étudiant en première année de DUT Informatique à l’IUT d’Aix-Marseille. Je recherche un stage conventionné de 3 mois pour la période du 11 avril au 17 juin 2022.
+
+Ce stage me permettra de découvrir le milieu professionnel, d’appliquer les compétences acquises durant ma formation et de développer mes capacités d’adaptation, de réactivité et d’autonomie.
+
+Ce sera également l’occasion de mettre en œuvre mes qualités de communication, de gestion des priorités et d’organisation.
+
+Le domaine informatique m’intéresse particulièrement et je souhaite travailler dans une entreprise spécialisée dans ce secteur. Je suis motivé, dynamique, sérieux et rigoureux.
+
+Vous remerciant par avance de l’attention que vous porterez à ma candidature, je reste à votre disposition pour toute information complémentaire.
+
+
+Maxime BILLY
