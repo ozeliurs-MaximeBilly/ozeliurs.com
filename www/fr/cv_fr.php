@@ -62,10 +62,12 @@
                 </div>
                 <h4><b>Competences Informatiques</b></h4>
                 <div class="row" style="margin-left: 30px">
-                    <div class="col-11 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Python</b></div>
-                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">SQL</b></div>
-                    <div class="col-8 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">C++</b></div>
-                    <div class="col-6 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Java</b></div>
+                    <div class="col-11 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>Python</b></p></div>
+                    <div class="col-10 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>Systèmes</b> (195h)<p></div>
+                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>SQL</b> (135h)</p></div>
+                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>Web</b> (90h)</p></div>
+                    <div class="col-8 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>C++</b></p></div>
+                    <div class="col-6 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin-left: 10px"><b>Java</b></p></div>
                 </div>
                 <h4><b>Connaissance des Logiciels</b></h4>
                 <div class="row" style="margin-left: 30px">
