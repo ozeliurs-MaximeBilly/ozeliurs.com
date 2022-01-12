@@ -8,7 +8,7 @@
     <p class="text-right is-marginless"><?php echo $_GET["entreprise"]; ?></p>
     <p class="text-right is-marginless"><?php echo $_GET["entreprise_adr1"]; ?></p>
     <p class="text-right is-marginless"><?php echo $_GET["entreprise_adr2"]; ?></p>
-    <p>Saint Cézaire le <?php echo strftime("%d %B %Y"); ?></p>
+    <p>Saint Cézaire le <?php echo strftime("%d %B %Y"); echo date('d B Y', time()); ?></p>
     <h3>Objet : Demande de Stage</h3>
     <p>Madame, Monsieur,</p>
     <!-- OK UP -->
