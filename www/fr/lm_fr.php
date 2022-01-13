@@ -1,4 +1,4 @@
-<?php $loc = setlocale( LC_TIME, ""); ?>
+<?php $month_name=array("","Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"); ?>
 <section class="card" style="margin: 10px auto">
     <p class="is-marginless">Maxime BILLY</p>
     <p class="is-marginless">56 chemin de l’adrech</p>
@@ -8,7 +8,7 @@
     <p class="text-right is-marginless"><?php echo $_GET["entreprise"]; ?></p>
     <p class="text-right is-marginless"><?php echo $_GET["entreprise_adr1"]; ?></p>
     <p class="text-right is-marginless"><?php echo $_GET["entreprise_adr2"]; ?></p>
-    <p>Saint Cézaire le <?php echo strftime("%d %B %Y"); echo date('d B Y', time()); ?></p>
+    <p>Saint Cézaire le <?php echo date('d', time()).' '.$month_name[(int)date('m', time())].' '.date('Y', time()); ?></p>
     <h3>Objet : Demande de Stage</h3>
     <p>Madame, Monsieur,</p>
     <!-- OK UP -->
