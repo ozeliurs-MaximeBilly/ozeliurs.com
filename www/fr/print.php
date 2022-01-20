@@ -1,6 +1,6 @@
 <?php
     include '../utils.inc.php';
-    head("Ozeliurs' Website");
+    head("CV - Maxime BILLY");
     print_page();
     if (isset($_GET['t'])) {
         title($_GET['t']);

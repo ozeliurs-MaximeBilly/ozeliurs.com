@@ -1,6 +1,6 @@
 <?php
 include '../utils.inc.php';
-head("Ozeliurs' Website");
+head("Lettre de Motivation - Maxime BILLY");
 print_page();
 include_once 'lm_fr.php';
 echo '<script>print()</script>';
