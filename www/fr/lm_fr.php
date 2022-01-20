@@ -10,9 +10,9 @@
     <h3>Objet : Demande de Stage</h3>
     <p>Madame, Monsieur,</p>
     <!-- OK UP -->
-    <p>Actuellement étudiant en deuxième année de DUT Informatique à l’Université d’Aix-Marseille, je suis à la recherche d'un stage conventionné au sein d’une entreprise comme entreprise pendant une durée de 3 mois à compter du 11 avril 2022.</p>
+    <p>Actuellement étudiant en deuxième année de DUT Informatique à l’Université d’Aix-Marseille, je suis à la recherche d'un stage conventionné au sein d’une entreprise comme <?php echo $_GET["entreprise"]; ?> pendant une durée de 3 mois à compter du 11 avril 2022.</p>
 
-    <p>Étant intéressé par interet, je me suis tourné vers entreprise dont le secteur d’activité correspond à l'intitulé de mon stage.</p>
+    <p>Étant intéressé par <?php echo $_GET["entreprise_interet"]; ?>, je me suis tourné vers <?php echo $_GET["entreprise"]; ?> dont le secteur d’activité correspond à l'intitulé de mon stage.</p>
 
     <p>Travailler au sein de votre entreprise me permettra de me professionnaliser. Ma motivation est à la fois de participer au développement d’une entreprise tout en y mettant en application mes connaissances.</p>
 
