@@ -4,7 +4,7 @@ head("Ozeliurs' Website");
 start_page();
 include_once 'lm_fr.php';
 ?>
-<a href="/fr/lm_print.php?entreprise=<?php echo $_GET["entreprise"];?>&entreprise_interet=<?php echo $_GET["entreprise_interet"];?>"></a>
+<a href="/fr/lm_print.php?entreprise=<?php echo $_GET["entreprise"];?>&entreprise_interet=<?php echo $_GET["entreprise_interet"];?>">Imprimer</a>
 <?php
 end_page();
 ?>
