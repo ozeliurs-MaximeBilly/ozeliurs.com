@@ -26,7 +26,10 @@
             <code>Septembre 2020 à Aujourd'hui</code>
             <h4 style="margin-bottom: 0"><b>Ecole Nationale d'Ingénieurs de Saint Etienne</b>, Saint Etienne</h4>
             <code>Septembre 2018 à Fevrier 2020</code>
-            <ul style="margin-bottom: 5px"><li>Compétences acquises:</li></ul>
+            <ul style="margin-bottom: 5px">
+                <li>Classe préparatoire intégré - <b>Non Validé</b></li>
+                <li>Compétences acquises:</li>
+            </ul>
             <div class="row">
                 <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Mener un Raisonnement Scientifique.</p></div>
                 <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Résolution de Problèmes.</p></div>
