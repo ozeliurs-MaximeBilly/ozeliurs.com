@@ -27,7 +27,7 @@
             <h4 style="margin-bottom: 0"><b>Ecole Nationale d'Ingénieurs de Saint Etienne</b>, Saint Etienne</h4>
             <code>Septembre 2018 à Fevrier 2020</code>
             <ul style="margin-bottom: 5px">
-                <li>Classe préparatoire intégré - <b>Non Validé</b></li>
+                <li>Classe préparatoire intégrée - <b>Non Validée</b></li>
                 <li>Compétences acquises:</li>
             </ul>
             <div class="row">
