@@ -30,4 +30,4 @@ jobs:
         USERNAME: ${{ secrets.USER }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: sudo rm -r /var/www/@/* && sudo cp -r /tmp/ozeliurs.com/www/* /var/www/@/ && sudo rm -r /tmp/ozeliurs.com
+        script: sudo touch /var/www/@/tmp && sudo rm -r /var/www/@/* && sudo cp -r /tmp/ozeliurs.com/www/* /var/www/@/ && sudo rm -r /tmp/ozeliurs.com
