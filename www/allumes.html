@@ -42,8 +42,8 @@
         })
         .then(data => {
             data.forEach(point => {
-                chart.label.push(point.time);
-                chart.datasets[0].data.push(point.value)
+                chart.data.labels.push(point.time);
+                chart.data.datasets[0].data.push(point.value)
                 chart.update()
             });
         })
