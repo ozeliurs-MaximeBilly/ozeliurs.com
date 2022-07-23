@@ -170,19 +170,178 @@
             </div>
         </div>
     </body>
-    <!-- Matomo -->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//matomo.ozeliurs.com/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Matomo Code -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ozeliurs' Website</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js" defer></script>
+    </head>
+
+    <body style="background-color: rgba(26, 159, 96, 00.2)">
+        
+        <!-- NAVBAR -->
+        <nav class="nav" style="background-color: white">
+            <div class="nav-left">
+                <a href="/" class="brand">Ozeliurs' Website</a>
+                <div class="tabs">
+                    <a href="https://blog.ozeliurs.com/projects">Projects</a>
+                    <a href="https://blog.ozeliurs.com/guides">Guides</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/ozeliurs-MaximeBilly" class="button outline">Github</a>
+            </div>
+        </nav>
+
+        <!-- CONTAINER -->
+        <div class="container" id="container">
+
+            <!--
+            <div class="card" style="display: flex; margin-top: 10px">
+                <h1 style="margin: 10px auto">DUT Informatique</h1>
+            </div>
+            -->
+
+            <div id="cv" class="card" style="margin-top: 10px;">
+                <div class="row" style="margin: 10px auto">
+                    <div class="col"> <!-- Colonne de Gauche -->
+                        <img src="/static/content/pp.webp" alt="Profile-Picture" class="is-rounded" style="padding: 10px">
+                        <code style="margin-left: 5px" class="is-center">Maxime BILLY</code>
+                        <hr>
+                        <div style="margin-left: 5px">
+                            <samp>Né le 12/03/2000 (<span id="age"></span> ans)</samp><br>
+                            <samp>Vit à Saint Cézaire 06530</samp>
+                        </div>
+                        <hr>
+                        <div style="margin-left: 5px">
+                            <a href="mailto:ozeliurs@gmail.com">
+                                <code class="is-center" style="margin-bottom: 5px;">ozeliurs@gmail.com</code>
+                            </a>
+                            <a href="tel:+33695923210">
+                                <code class="is-center">06 95 92 32 10</code>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="card" style="margin: 10px auto">
+                            <p style="margin-bottom: 0">Permis de Conduire (B)</p>
+                            <small>Obtenu en 2020.</small>
+                            <br><br>
+                            <p>Propriétaire d'une <i>Ford Fiesta</i>.</p>
+                        </div>
+                        <div class="card" style="margin: 10px auto">
+                            <p style="margin-left: 5px; margin-bottom: 0">Brevet d'Initiation a l'Aéronautique</p>
+                            <small style="margin-left: 5px">Obtenu en 2016.</small>
+                        </div>
+                    </div>
+                    <div class="col-9"> <!-- Colonne de Droite -->
+                        <h1>Ma formation</h1> <!-- Sous partie Formation -->
+                        <div style="margin-left: 30px; margin-bottom: 20px">
+                            <h4 style="margin-bottom: 0"><b>DUT Informatique</b>, Aix-en-Provence</h4>
+                            <code>Septembre 2020 à Aujourd'hui</code>
+                            <ul style="margin-bottom: 5px">
+                                <li>Classement par Semestre: </li>
+                                <ul>
+                                    <li>Premier Semestre: <b>40/115</b></li>
+                                    <li>Second Semestre: <b>22/114</b></li>
+                                    <li>Troisième Semestre: <b>3/71</b></li>
+                                </ul>
+                            </ul>
+                            <h4 style="margin-bottom: 0"><b>Ecole Nationale d'Ingénieurs de Saint Etienne</b>, Saint Etienne</h4>
+                            <code>Septembre 2018 à Fevrier 2020</code>
+                            <ul style="margin-bottom: 5px">
+                                <li>Classe préparatoire intégrée - <b>Non Validée</b></li>
+                                <li>Compétences acquises:</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Mener un Raisonnement Scientifique.</p></div>
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Résolution de Problèmes.</p></div>
+                            </div>
+                            <h4 style="margin-bottom: 0"><b>Lycée Alexis de Tocqueville</b>, Grasse</h4>
+                            <code>Septembre 2015 à Juin 2018</code>
+                            <ul><li>Baccalauréat Scientifique spécialité Physique-Chimie <b>Mention Bien</b>.</li></ul>
+
+                        </div>
+                        <h1>Mes expériences professionelles</h1>
+                        <div style="margin-left: 30px; margin-bottom: 20px"> <!-- Sous partie experience professionelle -->
+                            <h4 style="margin-bottom: 0"><b>See Tickets</b>, Marseille - Stage de fin d'études</h4>
+                            <code>Avril 2022 à Juin 2022</code>
+                            <ul><li>Automatisation du process de remboursement des clients finaux.</li></ul>
+                            <div class="row">
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en Autonomie.</p></div>
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Organiser un projet.</p></div>
+                            </div>
+                            <h4 style="margin-bottom: 0"><b>LEASON</b>, Saint Cézaire — Carrefour Contact</h4>
+                            <code>Mars 2020 à Juin 2020</code>
+                            <ul style="margin-bottom: 5px"><li>Travail en tant qu'employé commercial dans une équipe de 15 personnes.</li>
+                                <li>Compétences acquises:</li></ul>
+                            <div class="row">
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Accueillir et Renseigner.</p></div>
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Travailler en équipe.</p></div>
+                                <div class="col-auto bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0 10px">Gérer les priorités.</p></div>
+                            </div>
+                            <h4 style="margin-bottom: 0"><b>CSTB</b>, Sophia Antipolis — Centre Scientifique et Technique du Bâtiment</h4>
+                            <code>Janvier 2015 à Janvier 2015</code>
+                            <ul><li>Création d'un algorithme pour l'automatisation électrique d'un bâtiment.</li></ul>
+                        </div>
+                        <div> <!-- Sous partie My Skills -->
+                            <h1>Mes compétences</h1>
+                            <div style="margin-left: 30px; margin-bottom: 20px">
+                                <h4><b>Langues</b></h4>
+                                <div class="row" style="margin-left: 30px">
+                                    <div class="col-12 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Français</b></div>
+                                    <div class="col-10 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Anglais</b></div>
+                                    <div class="col-6 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Allemand</b></div>
+                                </div>
+                                <h4><b>Competences Informatiques</b></h4>
+                                <div class="row" style="margin-left: 30px">
+                                    <div class="col-11 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>Python</b></p></div>
+                                    <div class="col-10 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>Systèmes</b> (195h)<p></div>
+                                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>SQL</b> (135h)</p></div>
+                                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>HTML/CSS</b></p></div>
+                                    <div class="col-8 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>PHP</b></p></div>
+                                    <div class="col-8 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>Javascript</b></p></div>
+                                    <div class="col-8 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>C++</b></p></div>
+                                    <div class="col-6 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><p style="margin: 0px 0px 0px 10px"><b>Java</b></p></div>
+                                </div>
+                                <h4><b>Connaissance des Logiciels</b></h4>
+                                <div class="row" style="margin-left: 30px">
+                                    <div class="col-11 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Office Suite</b></div>
+                                    <div class="col-10 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Jetbrains Suite</b></div>
+                                    <div class="col-9 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Adobe Suite</b></div>
+                                    <div class="col-5 bg-primary text-white" style="border-radius: 5px; margin-bottom: 5px"><b style="margin-left: 10px">Solidworks & Catia V5</b></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div> <!-- Sous partie Centres d'interets -->
+                            <h1>Centres d'intérêt</h1>
+                            <ul>
+                                <li>Domotique</li>
+                                <li>Matériel Informatique</li>
+                                <li>Administration des Réseaux</li>
+                                <li>Sujets Scientifiques</li>
+                                <li>Photographie</li>
+                                <li>Guitare</li>
+                                <li>Vélo et course à pied</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partie Impression -->
+            <div class="card hide-pr" style="margin: 10px auto">
+                <h2>Version Papier</h2>
+                <div class="col">
+                    <a href="#" class="is-center is-vertical-align button outline" onclick="print()">
+                        <img src="/static/icons/printer.svg" alt="printer_icon">
+                        <p style="margin: auto 10px">Imprimer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.ozeliurs.com/matomo.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+    </body>
+</html>
 </html>
